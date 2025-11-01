@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import SectionHeader from './SectionHeader';
+import profilePic from '../assets/IMG_20250814_030347.jpg';
 
 const Home = ({ setActiveSection }) => {
   const [tagline, setTagline] = useState('');
@@ -45,6 +46,15 @@ const Home = ({ setActiveSection }) => {
   return (
     <section id="home" className="min-h-[calc(100vh-4rem)] flex items-center justify-center text-center py-20">
       <div>
+        <div className="flex justify-center mb-6">
+          <div className="w-56 h-56 rounded-full overflow-hidden border-4 border-cyan-400 shadow-lg shadow-cyan-500/20">
+            <img
+              src={profilePic}
+              alt="Aman Motwani"
+              className="w-full h-full object-cover object-center transform scale-100  transition-transform duration-200 hover:scale-110"
+            />
+          </div>
+        </div>
         <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl md:text-6xl">
           Hi, I'm <span className="text-cyan-400">Aman Motwani</span>
         </h1>

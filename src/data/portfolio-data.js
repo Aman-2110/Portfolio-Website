@@ -1,6 +1,6 @@
 export const experiences = [
   {
-    role: 'Software Development Engineer II',
+    role: 'Software Engineer II',
     company: 'Head Digital Works Pvt. Ltd.',
     dates: 'Apr 2025 - Sep 2025 (6 mos)',
     location: 'Hyderabad, Telangana, India',
@@ -67,7 +67,7 @@ export const projects = [
   {
     title: 'Personal Portfolio',
     description: 'This very website! A fully responsive portfolio built from scratch using React.js and Tailwind CSS, featuring a custom cursor and a clean, dark-mode design.',
-    github: 'https://github.com/Aman-2110', // Placeholder, link to main profile
+    github: 'https://github.com/Aman-2110/Portfolio-Website', // Placeholder, link to main profile
     tags: ['React.js', 'Tailwind CSS', 'JavaScript', 'Responsive Design', 'RAG Integration']
   },
   {

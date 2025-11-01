@@ -101,9 +101,30 @@ You MUST answer questions based ONLY on the provided context.
 Do NOT make up information or answer questions outside of the context.
 Be friendly and concise. If the answer is not in the context, politely say 'I don't have that specific information based on the portfolio, but you can reach out to Aman directly at amanmotwani0021@gmail.com.'`;
 
-    // Construct the chat history for the API
+    // If a portfolioContext is provided (string or object), include it as an additional system message
+    // so the model can reference the portfolio data when answering. If the context is an object,
+    // stringify it safely and truncate to avoid sending extremely large payloads.
+    // const serializeContext = (ctx) => {
+    //   if (!ctx) return null;
+    //   let text = typeof ctx === 'string' ? ctx : (() => {
+    //     try {
+    //       return JSON.stringify(ctx);
+    //     } catch (e) {
+    //       return String(ctx);
+    //     }
+    //   })();
+    //   // Truncate if too long (keep first 4000 chars)
+    //   if (text.length > 4000) text = text.slice(0, 4000) + '\n\n[TRUNCATED]';
+    //   return text;
+    // };
+
+    // const contextText = serializeContext(portfolioContext);
+
+    // Construct the chat history for the API. Start with the main system prompt, then
+    // optionally include the portfolio context as another system message so it's prioritized.
     const apiMessages = [
       { role: "system", content: systemPrompt },
+      ...(portfolioContext ? [{ role: 'system', content: `Portfolio context (use this to answer user queries):\n${portfolioContext}` }] : []),
       // Add previous messages (simplified)
       ...messages.slice(1).map(msg => ({ // skip the first greeting
         role: msg.sender === 'ai' ? 'assistant' : 'user',
