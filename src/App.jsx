@@ -65,7 +65,14 @@ export default function App() {
     if (ref.current) {
       setManualNav(true); // Disable observer logic temporarily
       setActiveSection(sectionId);
-      ref.current.scrollIntoView({ behavior: 'smooth' });
+      
+      // Get navbar height and calculate scroll position
+      const navbar = document.querySelector('nav.sticky');
+      const navbarHeight = navbar ? navbar.offsetHeight : 0;
+      const y = ref.current.getBoundingClientRect().top + window.pageYOffset - navbarHeight/1.3;
+      
+      // Smooth scroll to position
+      window.scrollTo({ top: y, behavior: 'smooth' });
       
       // Re-enable observer logic after scroll
       setTimeout(() => {
