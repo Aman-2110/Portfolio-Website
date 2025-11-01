@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+/* Ensure black background throughout and prevent overscroll bounce */
+:root {
+  background-color: black;
+}
