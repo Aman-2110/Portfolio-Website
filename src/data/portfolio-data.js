@@ -59,11 +59,23 @@ export const projects = [
     tags: ['Distributed Systems', 'Sockets', 'TCP/UDP', 'Fault Tolerance', 'System Design']
   },
   {
-      title: 'MAGNET: Graph Neural Network Classifier',
-      description: 'Led the development of a Multi-Label Text Classification system using Graph Neural Networks. Implemented advanced techniques combining GloVe and BERT embeddings with BiLSTM layers and attention mechanism. Demonstrated superior performance through comprehensive comparisons with classical and modern text classification models.',
-      github: 'https://github.com/Aman-2110/MAGNET',
-      tags: ['PyTorch', 'GNN', 'BERT', 'NLP', 'Deep Learning', 'Attention', 'BiLSTM', 'GloVe']
-    },
+    title: 'MAGNET: Graph Neural Network Classifier',
+    description: 'Led the development of a Multi-Label Text Classification system using Graph Neural Networks. Implemented advanced techniques combining GloVe and BERT embeddings with BiLSTM layers and attention mechanism. Demonstrated superior performance through comprehensive comparisons with classical and modern text classification models.',
+    github: 'https://github.com/Aman-2110/MAGNET',
+    tags: ['PyTorch', 'GNN', 'BERT', 'NLP', 'Deep Learning', 'Attention', 'BiLSTM', 'GloVe']
+  },
+  {
+    title: 'Splitwise Machine Coding',
+    description: 'Developed a robust expense sharing system implementing core Splitwise functionality. Designed with SOLID principles using Strategy pattern for flexible expense splitting algorithms (Equal, Exact, Percentage). Features comprehensive error handling and a scalable architecture supporting multiple split types.',
+    github: 'https://github.com/Aman-2110/splitwise-machine-coding',
+    tags: ['Java', 'OOP', 'Design Patterns', 'Strategy Pattern', 'Clean Code', 'System Design']
+  },
+  {
+    title: 'Parking Lot System',
+    description: 'Designed and implemented a scalable parking lot management system using object-oriented principles and design patterns. Features include multi-level parking, dynamic spot allocation, real-time display board, and flexible billing strategies. Implemented using Observer, Strategy, and Singleton patterns for maintainable and extensible code.',
+    github: 'https://github.com/Aman-2110/parking-lot-machine-coding',
+    tags: ['Java', 'OOP', 'Design Patterns', 'System Design', 'Unit Testing', 'Maven']
+  },
   {
     title: 'Personal Portfolio',
     description: 'This very website! A fully responsive portfolio built from scratch using React.js and Tailwind CSS, featuring a custom cursor and a clean, dark-mode design.',
@@ -76,5 +88,5 @@ export const projects = [
     github: null,
     tags: ['Coming Soon', 'Writing']
   },
-    
-  ];
+
+];

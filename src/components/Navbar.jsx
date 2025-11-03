@@ -23,16 +23,7 @@ const Navbar = ({ activeSection, setActiveSection }) => {
                 setTimeout(() => {
                     const el = document.getElementById(sectionId);
                     if (el) {
-                        const navbar = document.querySelector('nav.sticky');
-                        const navbarHeight = navbar ? navbar.offsetHeight : 0;
-
-                        // Compute absolute Y position considering scroll and navbar
-                        const y = el.getBoundingClientRect().top + window.scrollY;
-
-                        window.scrollTo({
-                            top: y,
-                            behavior: 'smooth'
-                        });
+                        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
                     }
                 }, 0);
 
