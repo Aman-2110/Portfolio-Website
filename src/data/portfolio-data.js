@@ -2,7 +2,7 @@ export const experiences = [
   {
     role: 'Software Engineer II',
     company: 'Head Digital Works Pvt. Ltd.',
-    dates: 'Apr 2025 - Sep 2025 (6 mos)',
+    dates: 'Apr 2025 - Oct 2025 (7 mos)',
     location: 'Hyderabad, Telangana, India',
     points: [
       'Built scalable, low-latency backend systems (Java 21, Spring Boot, Cassandra) supporting 10M+ users.',
@@ -16,7 +16,7 @@ export const experiences = [
   {
     role: 'Software Engineer I',
     company: 'Head Digital Works Pvt. Ltd.',
-    dates: 'Jul 2024 - Mar 2025 (9 mos)',
+    dates: 'Jun 2024 - Mar 2025 (10 mos)',
     location: 'Hyderabad, Telangana, India',
     points: [
       'Developed a React.js + Tailwind CSS admin console, improving team efficiency and boosting user retention by 5%.',
@@ -28,7 +28,7 @@ export const experiences = [
   {
     role: 'Teaching Assistant',
     company: 'IIIT Hyderabad (IIITH)',
-    dates: 'Aug 2023 - Jan 2024 (6 mos)',
+    dates: 'May 2023 - May 2024 (13 mos)',
     location: 'Hyderabad, Telangana, India',
     points: [
       'Teaching Assistant for the course Data Structures & Algorithms for Problem Solving.',
